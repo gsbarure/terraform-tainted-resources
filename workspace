@@ -1,0 +1,27 @@
+resource "aws_instance" "instance01" {
+  ami           = "ami-0fc5d935ebf8bc3bc"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "my-instance01-dev"
+  }
+}
+
+resource "aws_instance" "instance02-dev" {
+  ami           = "ami-0fc5d935ebf8bc3bc"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "my-instance02-dev"
+  }
+}
+
+resource "aws_instance" "instance03-dev" {
+  ami           = "ami-0fc5d935ebf8bc3bc"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "my-instance03-dev"
+  }
+}
+
